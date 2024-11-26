@@ -1,0 +1,270 @@
+* {
+    /* make contain start from the edge of the screen */
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--main-font);
+    /* make the size of any div a portion of padding and border sizes 
+    so if you change the padding the total width still the same
+    more in: https://www.w3schools.com/csS/css3_box-sizing.asp
+    */
+    box-sizing: border-box;
+}
+h1 {
+    text-transform: uppercase;
+}
+#header-nav {
+    background-color: var(--petro-dollar);
+    width: 100%;
+    /* height: 50px; */
+    height: auto;
+    display: flex;
+    /* flex properity: alignment along the x axis */
+    justify-content: space-between;
+    /* flex properity: alignment along the y axis */
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 18px;
+    font-weight: 700;
+    position: fixed;
+}
+/* #header-nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+#header-nav > div {
+    /* make the div inside nav bigger. Therefore, the nav will be bigger*/
+    padding: 2%;
+    margin-right: 4%;
+    background-color: var(--petro-dollar);
+}
+#header-nav div a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--white);
+}
+#header-nav .menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 11px !important;
+    font-weight: 400px;
+    margin:0 0 0 6%;
+}
+#header-nav .menu-items > a {
+    margin-left: 15%;
+    cursor: pointer;
+}
+#banner {
+    background-color: var(--green);
+    text-align: center;
+    color: var(--white);
+}
+#banner > * {
+    padding: 2%;
+}
+#banner > img {
+    max-width: 35%;
+    height: auto;
+    padding-top: 20%;
+}
+#banner h1 {
+    color: var(--white);
+    text-transform: uppercase;
+}
+#banner p {
+    padding-bottom: 10%;
+    font-size: large;
+    font-weight: 550;
+}
+.line-star-line {
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.line-star-line > svg {
+    max-width: 30px;
+    /* height: auto; */
+    fill: var(--white);
+}
+.line-star-line > hr {
+    width: 10%;
+    margin: 0 15px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--white);
+
+}
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    padding: 8% 0;
+    text-align: center;
+    color: var(--petro-dollar);
+    font-size: 22px;
+}
+#portfolio > * {
+    padding: 1%;
+}
+#portfolio > .line-star-line > svg {
+    fill: var(--petro-dollar);
+    width: 40px;
+}
+#portfolio > .line-star-line > hr {
+    background-color: var(--petro-dollar);
+}
+#portfolio > .line-star-line {
+    width: 100%;
+}
+#portfolio .galary{
+    display: flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+}
+.galary > div {
+    width: 30%;
+    height: 51%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+#about {
+    width: 100%;
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding: 6%;
+}
+#about h1{
+    font-size: 35px;
+}
+#about > .paragraphs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+.paragraphs > * {
+    max-width: 40%;
+    text-align: right;
+    font-size: medium;
+    font-weight: 500;
+    line-height: 24px;
+} 
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    background-color: var(--white);
+    text-align: center;
+    padding: 6%;
+    font-size: 35px;
+}
+#contact-me * {
+    color: var(--petro-dollar) !important;
+    fill: var(--petro-dollar);
+}
+#contact-me .line-star-line {
+    margin-top: 3%;
+    margin-bottom: 4%;
+}
+#contact-me .line-star-line > hr {
+    background-color: var(--petro-dollar);
+}
+#contact-me > form {
+    text-align: right;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+#contact-me > form > input {
+    display: block;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-size: xx-large;
+    margin: 40px;
+    border-width: 1px;
+    padding: 20px;
+    padding-left: 0;
+    text-align: right;
+}
+#contact-me > form > input[type="submit"] {
+    background-color: var(--green);
+    opacity: 0.65;
+    border-color: var(--green);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--white) !important;
+    width: 100px;
+    padding: 20px;
+    font-size: medium;
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--petro-dollar);
+    color: var(--white);
+    text-align: center;
+    padding: 3%;
+}
+footer > div {
+    max-width: 300px !important;
+}
+footer h1 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+footer p {
+    font-size: small;
+    margin: 6%;
+}
+.around-the-web button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: var(--petro-dollar);
+    width: 40px;
+    height: 40px;
+    background-color: var(--petro-dollar);
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    margin-right: 6px;
+    margin-top: 4%;
+}
+.around-the-web svg {
+    fill: var(--white);
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+}
+.copyright {
+    background-color: var(--very-petro-dollar);
+    color: var(--white);
+    text-align: center;
+    font-size: 10px;
+    padding: 2.5%;
+    padding-left: 0;
+}
+:root {
+    --petro-dollar: rgb(44, 62, 80);
+    --white: #ffffff;
+    --green: #1abc9c;
+    --very-petro-dollar: #1a252f;
+    --main-font: "Montserrat";
+}
